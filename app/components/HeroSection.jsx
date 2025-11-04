@@ -1,24 +1,20 @@
 import React from "react";
-import photoAndrei from "../../public/andreiphoto.png";
+import Image from "next/image";
+import AndreiImage from "../../public/andreiphoto.png";
 
 export default function HeroSection() {
   return (
-    // Container SectionHero
-    <div className="py-6">
-      <div className="px-3">
-        <div className="text-center">
-          <div>
-            <img src={photoAndrei} alt="andrei's photo"></img>
-          </div>
-          <div>
-            <p>ANDREI LEONARD PLESCAN</p>
-          </div>
-          <div>
-            <p>Full Stack Developer / Continuos learner</p>
-          </div>
-          <div>Bio veloce ed efficace su di me</div>
-        </div>
+    <section className="mb-8 text-center">
+      <div>
+        <Image
+          src={AndreiImage}
+          alt="Andrei's image"
+          className="mx-auto w-40 h-40 rounded-full"
+        />
+        <h1>ANDREI LEONARD PLESCAN</h1>
+        <h3>Full Stack Developer / Continuos learner</h3>
+        <p>Bio veloce ed efficace su dime</p>
       </div>
-    </div>
+    </section>
   );
 }
