@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="pt-6">
-      <div className="flex w-auto h-18 justify-between text-lg px-6">
-        <div>Work</div>
-        <div>Contact me!</div>
-      </div>
-    </div>
+    <header className="my-10 mx-8">
+      <nav className="flex justify-between text-lg px-6">
+        <p className="p-3 rounded-2xl bg-cyan-600 text-white">Work</p>
+        <p className="p-3 rounded-2xl bg-cyan-600 text-white">Contact me!</p>
+      </nav>
+    </header>
   );
 }
