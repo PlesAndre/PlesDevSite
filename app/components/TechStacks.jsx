@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TechStacks() {
   return (
-    <section className="mx-auto text-center w-50">
+    <section className="mx-auto mt-6 text-center w-50">
       <h2>Tech Stacks</h2>
       {/*Core languages*/}
       <div className="border-2 mb-4">
